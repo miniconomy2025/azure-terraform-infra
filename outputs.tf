@@ -1,3 +1,19 @@
+output "tenant_id" {
+    value = data.azurerm_client_config.current.tenant_id
+}
+
+output "subscription_id" {
+  value = data.azurerm_client_config.current.subscription_id
+}
+
+output "client_id" {
+  value = data.azurerm_client_config.current.client_id
+}
+
+output "last_deployer_object_id" {
+  value = data.azurerm_client_config.current.object_id
+}
+
 output "resource_group_name" {
     value = azurerm_resource_group.miniconomy_rg.name
     description = "Name of the resource group"
@@ -24,3 +40,4 @@ output "dns_zones_name_servers" {
 output "calendar_cname_fqdn" {
     value = azurerm_dns_cname_record.calendar_cname.fqdn
 }
+
