@@ -1,6 +1,6 @@
 resource "azurerm_dns_cname_record" "sumsangphonesweb_cname" { 
   name                = "sumsang-phones" 
-  record              = "bbd-grad-project.co.za" 
+  record              = "ec2-16-28-22-112.af-south-1.compute.amazonaws.com" 
 
   zone_name           = data.azurerm_dns_zone.grad_projects_dns_zone.name 
   resource_group_name = "the-hive" 
@@ -10,7 +10,7 @@ resource "azurerm_dns_cname_record" "sumsangphonesweb_cname" {
 
 resource "azurerm_dns_cname_record" "sumsangphonesapi_cname" { 
   name                = "sumsang-phones-api" 
-  record              = "bbd-grad-project-api.co.za" 
+  record              = "ec2-13-244-196-99.af-south-1.compute.amazonaws.com" 
 
   zone_name           = data.azurerm_dns_zone.grad_projects_dns_zone.name 
   resource_group_name = "the-hive" 
