@@ -10,7 +10,8 @@ resource "azurerm_dns_cname_record" "electronics_supplier_frontend" {
 
 resource "azurerm_dns_cname_record" "electronics_supplier_api" {
   name                = "electronics-supplier-api"
-  record              = "ec2-13-244-241-91.af-south-1.compute.amazonaws.com"
+  # record              = "ec2-13-244-241-91.af-south-1.compute.amazonaws.com"
+  record              = "api-alb-1872174287.af-south-1.elb.amazonaws.com"
 
   zone_name           = data.azurerm_dns_zone.grad_projects_dns_zone.name
   resource_group_name = "the-hive"
