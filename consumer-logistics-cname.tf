@@ -9,7 +9,7 @@ resource "azurerm_dns_cname_record" "consumer_logistics_frontend" {
 
 resource "azurerm_dns_cname_record" "consumer_logistics_api" {
   name                = "consumer-logistics-api"
-  record              = "f85q1igme7.execute-api.af-south-1.amazonaws.com"
+  record              = "d-jv5ci7t1pb.execute-api.af-south-1.amazonaws.com"
   zone_name           = data.azurerm_dns_zone.grad_projects_dns_zone.name
   resource_group_name = "the-hive"
   ttl                 = 3600
