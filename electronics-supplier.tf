@@ -1,6 +1,6 @@
 resource "azurerm_dns_cname_record" "electronics_supplier_frontend" {
   name                = "electronics-supplier"
-  record              = "ec2-13-246-212-252.af-south-1.compute.amazonaws.com"
+  record              = "frontend-alb-1574728027.af-south-1.elb.amazonaws.com"
 
   zone_name           = data.azurerm_dns_zone.grad_projects_dns_zone.name
   resource_group_name = "the-hive"
